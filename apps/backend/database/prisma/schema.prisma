@@ -1,0 +1,11 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Models go here. Port over customers / menu_items / orders / order_items
+// from the V1 schema, or start fresh — up to you.

@@ -1,0 +1,16 @@
+# services:
+#   postgres:
+#     image: postgres:16-alpine
+#     container_name: protocol_v2_postgres
+#     restart: unless-stopped
+#     environment:
+#       POSTGRES_USER: protocol
+#       POSTGRES_PASSWORD: protocol
+#       POSTGRES_DB: protocol_v2
+#     ports:
+#       - "5432:5432"
+#     volumes:
+#       - protocol_v2_pgdata:/var/lib/postgresql/data
+
+# volumes:
+#   protocol_v2_pgdata:
