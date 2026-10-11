@@ -6,6 +6,8 @@ body{
 }
 .header-bar{
     display: flex;
+    flex-shrink: 0;
+    flex-grow: 1;
     padding: 20px;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +48,7 @@ a{
     font-weight: 700px;
     max-width: 50px;
     padding: 25px;
+    border-radius: 20px;
 }
 .specials{
     display: flex;
@@ -53,4 +56,12 @@ a{
     align-items: center;
     
 }
-
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 55px;
+    color: white;
+    background-color: rgba(85, 20, 27, 1);
+    gap: 35px;
+}
