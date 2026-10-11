@@ -6,13 +6,15 @@ body{
 }
 .header-bar{
     display: flex;
-    flex-shrink: 0;
-    flex-grow: 1;
     padding: 20px;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(213, 55, 73, 1);
     color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
 }
 a{
     text-decoration: none;
@@ -39,6 +41,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 75px;
 }
 .specials1{
 
