@@ -6,14 +6,20 @@ TypeScript + Express + Prisma + Postgres.
 
 ```
 app/            Express application code
-  common/       Shared middleware, error handling
-  config/       Env loading & validation
-  modules/      Feature modules (routes/validator/controller/service/repository)
-  prisma/       PrismaService (singleton PrismaClient wrapper)
-  script/       One-off / maintenance scripts
-  test/         Tests
-  app.module.ts Express app assembly + route mounting
-  server.ts     Entry point
+  backend/
+    app/
+      common/       Shared middleware, error handling
+      config/       Env loading & validation
+      modules/      Feature modules (routes/validator/controller/service/repository)
+      prisma/       PrismaService (singleton PrismaClient wrapper)
+      script/       One-off / maintenance scripts
+      test/         Tests
+      app.module.ts Express app assembly + route mounting
+      server.ts     Entry point
+  frontend/
+    dashboard/
+    web/
+    packages/
 database/
   prisma/
     schema.prisma   Prisma schema (datasource + models)
@@ -22,11 +28,11 @@ packages/
   shared-types/ Types shared across app & database (if/when needed)
 ```
 
-This is a single npm project (not a monorepo) — `database/` and `packages/`
+This is a single npm project — `database/` and `packages/`
 are just organizational folders referenced by relative path, not separate
 installable packages.
 
-## First-time setup
+## First-time setup - backend
 
 ```bash
 npm install
@@ -52,3 +58,7 @@ needed — Prisma reads the URL from env.
 Create `app/modules/<name>/` following the layered pattern
 (`routes → validator → controller → service → repository`), then import
 and mount its router in `app/app.module.ts`.
+
+
+# Protocol V2 - Frontend
+HTML + CSS + Javascript
