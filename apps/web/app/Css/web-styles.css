@@ -22,4 +22,12 @@
     --bright-green: hsl(154, 100, 48);
     --green-bg-1: hsl(154, 88, 72);
     --green-bg-2: hsl(154, 72, 86);
+    
+                /*BLUE*/
+    --navy-blue-for-text: hsl(252, 100, 15);
+    --dark-blue-for-btn-msg: hsl(252, 100, 25);
+    --blue-for-text-on-grey-bg: hsl(252, 100, 38);
+    --bright-blue: hsl(252, 88, 52);
+    --blue-bg-1: hsl(252, 66, 72);
+    --blue-bg-2: hsl(252, 52, 91);    
 }
