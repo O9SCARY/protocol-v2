@@ -30,4 +30,12 @@
     --bright-blue: hsl(252, 88, 52);
     --blue-bg-1: hsl(252, 66, 72);
     --blue-bg-2: hsl(252, 52, 91);    
+
+                /*GREY*/
+    --black: hsl(0, 0, 0);
+    --very-dark-gray-for-bright-texts-bg: hsl(0, 0, 24);
+    --dark-grey-for-btn-bg: hsl(0, 0, 42);
+    --bright-grey: hsl(0, 0, 64);
+    --light-grey-for-bg: hsl(0, 0, 85);
+    --white: hsl(0, 0, 100);
 }
