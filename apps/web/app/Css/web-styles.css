@@ -1,8 +1,16 @@
 :root{
+            /*REDS*/
     --dark-wine-for-texts: hsl(0, 100%, 19%);
     --red-for-warning-texts: hsl(0, 100%, 24%);
     --red-for-texts-on-grey-bg: hsl(0, 100, 36);
     --bright-red: hsl(0, 100, 48);
-    --bg-red-1: hsl(0, 100, 72);
     --bg-red-2: hsl(0, 100, 64);
+    --bg-red-1: hsl(0, 100, 72);
+            /*YELLOWS*/
+    --navy-yellow-for-text: hsl(49, 100, 16);
+    --orange-yellow-for-confirm-msg: hsl(49, 100, 38);
+    --yellow-for-text-on-grey-bg: hsl(50, 100, 54);
+    --bright-yellow: hsl(64, 100, 64);
+    --yellow-bg-1: hsl(64, 100, 72);
+    --yellow-bg-2: hsl(64, 100, 82);
 }
