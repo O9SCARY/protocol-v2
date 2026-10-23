@@ -9,7 +9,7 @@
     --light-text: hsl(39, 52%, 90%);
 
     /*FONT STYLES*/
-    --hero-name-text: "Arizonia";
+    --hero-name-font: "Arizonia";
     --sub-hero-name: "Just Me Again Down Here";
     --button-text: "Kufam";
     --body-text: "Fraunces";
@@ -21,16 +21,24 @@
     --small-text: 16px;
     --margin-space-btn-sections: 24px;
     --large-text: 24px;
+    --neg-large-text: -24px;
     --extra-large: 32px;
     --huge-text: 48px;
+    --huge-space: 56px;
+    --neg-huge-space: -56px;
     --very-huge: 64px;
+    --neg-very-huge: -64px;
     --huge-margin: 92px;
+    --neg-huge-margin: -92px;
     --hero-name-text: 128px;
+    --neg-hero-name-text: -128px;
 }
 body{
     margin: 0 var(--huge-margin);
     padding: 0;
     background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
 }
 .navbar{
     display: flex;
@@ -63,4 +71,43 @@ a{
 }
 .cart a{
     color: var(--white);
+}
+.hero-content{
+    margin-top: 100px;
+}
+#hero-name{
+    font-size: var(--hero-name-text);
+    font-family: var(--hero-name-font);
+    margin: 0;
+    z-index: 999px;
+    text-align: center;
+    margin-top: var(--neg-very-huge);
+    color: var(--gray-text);
+    -webkit-text-stroke: 2px black;
+}
+#float-pizza{
+    margin: 0;
+    padding: 0;
+    margin-left: var(--hero-name-text);
+    margin-bottom: var(--neg-huge-space);
+}
+#rotate{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+    padding: 0;
+}
+#float-pizza-rotate{
+    margin: 0;
+    padding: 0;
+    margin-right: var(--hero-name-text);
+    margin-top: var(--neg-hero-name-text);
+    transform: rotate(60deg);
+}
+#name-more{
+    margin: 0;
+    font-size: var(--extra-large);
+    font-family: var(--sub-hero-name);
+    color: var(--gray-text);
+    text-align: center;
 }
