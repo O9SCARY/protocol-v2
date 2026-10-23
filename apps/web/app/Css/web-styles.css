@@ -1,6 +1,7 @@
 :root{
     /*COLOURS*/
     --bg-color: hsl(22, 67%, 93%);
+    --bg-color-opacity: hsla(22, 67%, 93%, 0.95);
     --wine-bg-color: hsl(359, 50%, 35%);
     --white: hsl(0, 0%, 100%);
     --card-color: hsl(44, 52%, 96%);
@@ -27,7 +28,7 @@
     --hero-name-text: 128px;
 }
 body{
-    margin: 0;
+    margin: 0 var(--huge-margin);
     padding: 0;
     background-color: var(--bg-color);
 }
@@ -36,10 +37,9 @@ body{
     justify-content: space-between;
     margin: 0px var(--huge-margin);
     align-items: center;
-    padding-top: var(--large-text);
-    padding: var(--small-text);
     position: fixed;
     z-index: 999;
+    background-color: var(--bg-color-opacity);
     right: 0;
     left: 0;
 }
