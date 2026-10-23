@@ -6,4 +6,23 @@
     --card-color: hsl(44, 52%, 96%);
     --gray-text: hsl(46, 5%, 53%);
     --light-text: hsl(39, 52%, 90%);
+
+    /*FONT STYLES*/
+    --hero-name-text: "Arizonia";
+    --sub-hero-name: "Just Me Again Down Here";
+    --button-text: "Kufam";
+    --body-text: "Fraunces";
+
+    /*FONT SIZES*/
+    --very-small-padding-space: 4px;
+    --small-padding-space: 8px;
+    --very-small-text: 12px;
+    --small-text: 16px;
+    --margin-space-btn-sections: 24px;
+    --large-text: 24px;
+    --extra-large: 32px;
+    --huge-text: 48px;
+    --very-huge: 64px
+    --hero-name-text: 128px;
+
 }
