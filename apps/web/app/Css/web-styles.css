@@ -23,5 +23,44 @@
     --extra-large: 32px;
     --huge-text: 48px;
     --very-huge: 64px;
+    --huge-margin: 92px;
     --hero-name-text: 128px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px var(--huge-margin);
+    align-items: center;
+    padding-top: var(--large-text);
+    padding: var(--small-text);
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    left: 0;
+}
+img{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: var(--gray-text);
+    font-family: var(--button-text);
+}
+.middle-nav{
+    display: flex;
+    gap: var(--margin-space-btn-sections);
+}
+.cart{
+    background-color: var(--wine-bg-color);
+    border-radius: 5px;
+    padding: var(--small-padding-space) var(--small-text);
+}
+.cart a{
+    color: var(--white);
 }
