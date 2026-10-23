@@ -32,6 +32,7 @@
     --neg-huge-margin: -92px;
     --hero-name-text: 128px;
     --neg-hero-name-text: -128px;
+    --margin-for-rotate: -200px;
 }
 body{
     margin: 0 var(--huge-margin);
@@ -100,9 +101,10 @@ a{
 #float-pizza-rotate{
     margin: 0;
     padding: 0;
-    margin-right: var(--hero-name-text);
-    margin-top: var(--neg-hero-name-text);
+    margin-right: var(--extra-large);
+    margin-top: var(--margin-for-rotate);
     transform: rotate(60deg);
+    transform: scaleY(-1);
 }
 #name-more{
     margin: 0;
@@ -110,4 +112,25 @@ a{
     font-family: var(--sub-hero-name);
     color: var(--gray-text);
     text-align: center;
+}
+.action-btns{
+    display: flex;
+    justify-content: center;
+    gap: var(--huge-text);
+    margin-top: var(--large-text);
+}
+#order{
+    background-color: var(--white);
+    color: var(--wine-bg-color);
+    border-radius: 5px;
+    padding: var(--small-padding-space) var(--extra-large);
+    margin-left: var(--very-huge);
+    box-shadow: 0px 4px 3px var(--wine-bg-color);
+}
+#reservation{
+    background-color: var(--wine-bg-color);
+    color: var(--white);
+    border-radius: 5px;
+    padding: var(--small-padding-space) var(--extra-large);
+    box-shadow: 0px 4px 3px var(--gray-text);
 }
