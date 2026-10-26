@@ -124,10 +124,8 @@ a{
     background-color: var(--white);
     color: var(--wine-bg-color);
     border-radius: 5px;
-    /* padding: var(--small-padding-space) var(--extra-large); */
     padding: var(--extra-large) var(--huge-space);
     margin-left: var(--very-huge);
-    /* box-shadow: 0px 0px 0px var(--wine-bg-color); */
     box-shadow: 0px 4px 15px var(--gray-text);
     font-weight: 700;
 }
