@@ -11,7 +11,7 @@
     /*FONT STYLES*/
     --hero-name-font: "Arizonia";
     --sub-hero-name: "Just Me Again Down Here";
-    --button-text: "Kufam";
+    --button-text: system-ui;
     --body-text: "Fraunces";
 
     /*FONT SIZES*/
@@ -40,6 +40,7 @@ body{
     background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
+    font-family: var(--body-text);
 }
 .navbar{
     display: flex;
@@ -123,16 +124,41 @@ a{
     background-color: var(--white);
     color: var(--wine-bg-color);
     border-radius: 5px;
-    padding: var(--small-padding-space) var(--extra-large);
+    /* padding: var(--small-padding-space) var(--extra-large); */
+    padding: var(--extra-large) var(--huge-space);
     margin-left: var(--very-huge);
-    box-shadow: 0px 4px 3px var(--wine-bg-color);
+    /* box-shadow: 0px 0px 0px var(--wine-bg-color); */
+    box-shadow: 0px 4px 15px var(--gray-text);
     font-weight: 700;
 }
 #order{
     background-color: var(--wine-bg-color);
     color: var(--white);
     border-radius: 5px;
-    padding: var(--small-padding-space) var(--extra-large);
-    box-shadow: 0px 4px 3px var(--gray-text);
+    padding: var(--extra-large) var(--huge-space);
+    box-shadow: 0px 4px 15px var(--gray-text);
     font-weight: 700;
+}
+.fan-favorite-section{
+    display: flex;
+    flex-direction: column;
+}
+.view-full{
+    display: flex;
+    justify-content: flex-end;
+}
+.fan-full-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#fan-fav{
+    font-size: var(--large-text);
+    font-weight: 700;
+}
+#fan-fav, #view-full{
+    color: var(--gray-text);
+}
+#view-full{
+    font-size: var(--very-small-text);
 }
