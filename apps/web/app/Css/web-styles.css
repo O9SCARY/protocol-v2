@@ -75,7 +75,7 @@ a{
     color: var(--white);
 }
 .hero-content{
-    margin-top: 100px;
+    margin-top: var(--hero-name-text);
 }
 #hero-name{
     font-size: var(--hero-name-text);
