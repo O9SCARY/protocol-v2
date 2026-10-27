@@ -33,6 +33,7 @@
     --hero-name-text: 128px;
     --neg-hero-name-text: -128px;
     --margin-for-rotate: -200px;
+    --fan-fav-boxes: 450px;
 }
 body{
     margin: 0 var(--huge-margin);
@@ -159,4 +160,10 @@ a{
 }
 #view-full{
     font-size: var(--very-small-text);
+}
+.fan-fav-boxes{
+    background-color: var(--white);
+    border-radius: var(--very-small-text);
+    width: var(--fan-fav-boxes);
+    display: flex;
 }
