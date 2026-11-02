@@ -1,21 +1,19 @@
-import express, { Express } from "express";
-import { errorHandler } from "./common/middleware/error-handler";
+//importing blueprint. ...= require("") command
+import express, { type Express, type Request, type Response } from 'express';
 
-// As modules get built under app/modules/<name>/, import their router here
-// and mount it, e.g.: app.use("/api/menu", menuRouter)
 
-export function createApp(): Express {
-  const app = express();
+//declaration bleprint. Express is a type.
+const app: Express = express();
 
-  app.use(express.json());
+app.use(express.json());
 
-  app.get("/health", (_req, res) => {
-    res.json({ status: "ok" });
-  });
+app.get("/api/health", (req, res) => {
+    return res.status(200).json({
+        success: true,
+        message: "Protocol Restaurant API is running",
+    });
+});
 
-  // --- module routers mount below ---
-
-  app.use(errorHandler);
-
-  return app;
-}
+//exportation blueprint. if in case of compactability with standard JS.
+//use. export = app;
+export default app;
